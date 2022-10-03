@@ -30,12 +30,16 @@ An automated distillation software intended to reduce the run to run variability
 17. Mason Jars (12 pack of ~900 mL, Walmart)
 
 ## Fritzing Circuit Diagram
-![V1 Fritzing Diagram](Pi_RTD_Ball_Valve_Fritzing.png)
+![V1 Fritzing Diagram](RTD_Fritzing_Diagram_V1.png)
 
-## Updates to follow:
+## Future Updates:
 1. User input for target temperature and control limits
-2. Incorporate the fully open or fully closed sensors to output to user that system is maxed out
-3. PID Controller instead of Bang Bang if statements
-4. Recommended PID controls or set points based on target product (Vodka, Tequila, Brandy, Gin, etc.)
-5. Heating regulation
-6. Front end dashboard for remote monitoring
+2. Integrate a few Hall Effect flow sensors into the design and use flow rate data to module ball valve
+3. Incorporate the fully open or fully closed sensors to output to user that system is maxed out
+4. PID Controller instead of Bang Bang if statements
+5. Recommended PID controls or set points based on target product (Vodka, Tequila, Brandy, Gin, etc.)
+6. Heating regulation
+7. Front end dashboard for remote monitoring
+8. Create dedicated printed circuit boards (PCBs)
+9. Create kits of various sizes for sale
+10. Integrate a Compute Module 4 instead of a 4B+
