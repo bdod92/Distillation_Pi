@@ -29,5 +29,5 @@ An automated distillation software intended to reduce the run to run variability
 15. Alcometer (Amazon)
 17. Mason Jars (12 pack of ~900 mL, Walmart)
 
-## Fritzin Circuit Diagram
-
+## Fritzing Circuit Diagram
+![V1 Fritzing Diagram](Pi_RTD_Ball_Valve_Fritzing.png)
