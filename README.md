@@ -31,3 +31,11 @@ An automated distillation software intended to reduce the run to run variability
 
 ## Fritzing Circuit Diagram
 ![V1 Fritzing Diagram](Pi_RTD_Ball_Valve_Fritzing.png)
+
+## Updates to follow:
+1. User input for target temperature and control limits
+2. Incorporate the fully open or fully closed sensors to output to user that system is maxed out
+3. PID Controller instead of Bang Bang if statements
+4. Recommended PID controls or set points based on target product (Vodka, Tequila, Brandy, Gin, etc.)
+5. Heating regulation
+6. Front end dashboard for remote monitoring
