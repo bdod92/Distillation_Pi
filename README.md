@@ -29,8 +29,10 @@ An automated distillation software intended to reduce the run to run variability
 15. Alcometer (Amazon)
 17. Mason Jars (12 pack of ~900 mL, Walmart)
 
+
 ## Fritzing Circuit Diagram
 ![V1 Fritzing Diagram](RTD_Fritzing_Diagram_V1.png)
+
 
 ## Future Updates:
 1. User input for target temperature and control limits
@@ -43,3 +45,4 @@ An automated distillation software intended to reduce the run to run variability
 8. Create dedicated printed circuit boards (PCBs)
 9. Create kits of various sizes for sale
 10. Integrate a Compute Module 4 instead of a 4B+
+11. Use an integrated circuit to reduce the number of pins required to run the system
