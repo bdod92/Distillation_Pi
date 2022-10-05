@@ -40,9 +40,13 @@ An automated distillation software intended to reduce the run to run variability
 3. Incorporate the fully open or fully closed sensors to output to user that system is maxed out
 4. PID Controller instead of Bang Bang if statements
 5. Recommended PID controls or set points based on target product (Vodka, Tequila, Brandy, Gin, etc.)
-6. Heating regulation
-7. Front end dashboard for remote monitoring
+6. Regulate the heating supply based on the vapor temps at the top of the column (municipal gas currently)
+7. Front end dashboard for remote monitoring (Top of column vapor temp, condensed product temperature, total gallons extracted, total gallons of pure ethanol extracted)
 8. Create dedicated printed circuit boards (PCBs)
 9. Create kits of various sizes for sale
 10. Integrate a Compute Module 4 instead of a 4B+
 11. Use an integrated circuit to reduce the number of pins required to run the system
+12. Integrate a product temperature probe to keep record of condensate. This data can be used later for %Ethanol Calculations once density data is available.
+13. Integrate a fill height sensor to make volume determinations based on static jar volumes
+14. Integrate a load cell to determine weight that can be used with the fill volume to determine density
+15. Write a code to interpolate between the densities of water and ethanol based on the density of the material. Leverage the temperature data to ensure that the readings are calibrated accurately.
