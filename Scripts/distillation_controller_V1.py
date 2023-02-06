@@ -58,7 +58,6 @@ def pause_valve():
     
     
 ###### Loop to take INPUT from RTD and send OUTPUT to LED ######
-
 while True:
     temp = sensor.temperature # create a temperature object
     res = sensor.resistance # create a resistance object
