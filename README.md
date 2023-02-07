@@ -1,5 +1,5 @@
 # Distillation_Pi
-An automated distillation software intended to reduce the run to run variability in distillation.
+Software that automates distillation processes for various ethanol solutions. 
 
 ## Electronics Equipment
 1. Raspberry Pi 4B+
@@ -31,8 +31,24 @@ An automated distillation software intended to reduce the run to run variability
 
 
 ## Fritzing Circuit Diagram
-![V1 Fritzing Diagram](RTD_Fritzing_Diagram_V1.png)
+![V1 Fritzing Diagram](Distillation_Pi_Fritzing.png)
 
+## Process
+1. Mash is added to the boiler container
+2. The heat is turned on at a set level, allowing other process controls to determine the %ABV output
+3. The distillation script is booted up
+4. The RTD temperature probe at the top of the column records temperatures of the vapor product
+5. The RTD temperature probe in the condensed liquid reads the temperature of the liquid product
+6. The Load Cell takes the tare weight of the jars when they're added to the scale and then repeatedly (every 5 seconds) takes additional readings
+7. When the jar is nearly full, an alarm will sound letting the operators know to change jars
+8. All of the weight and temperature data are stored in a dataframe
+9. If the temperature at the top of the column is too high (or low), the ball valve that controls the dephlegmator will open (or close) to module water flow and increase (or decrease) reflux
+10. The servor motor will spin a shaft that has another shaft connected at the top at 90 degrees to swing over the jar every 30 seconds
+11. The perpendicular suspended shaft has the ultrasonic distance sensor attached which will take the height of the liquid in the jar
+12. Comparing the height against a table of known height:volume ratios for the jar, the volume will be taken and stored
+13. Using the volume, temperature, and weight, the %Alcohol By Volume (%ABV) will be calculated and stored in the DF
+14. As the ABV is calculated on a different cadence than the temperature and weight, null values will be sent for the %ABV when there is no data
+15. The flow sensor is added to get an idea of reflux vs water flow rate, but has not been incorporated yet (another RTD in the heat sink will be necessary)
 
 ## Future Updates:
 1. User input for target temperature and control limits
